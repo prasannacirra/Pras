@@ -1,0 +1,46 @@
+IQR :
+names<-c("siri","mahi","chiru")
+age<-c(23,24,25)
+marks<-c(88,78,25)
+df<-data.frame(names,age,marks)
+IQR(df $age)
+write.csv(df,"datafr.csv")
+
+QUANTILE :
+names<-c("siri","mahi","chiru")
+age<-c(23,24,25)
+marks<-c(88,78,25)
+df<-data.frame(names,age,marks)
+quantile(df $age)
+write.csv(df,"datafr.csv")
+
+MID RANGE :
+data <- c(12, 45, 33, 21, 9, 54, 30)
+mid_range <- (min(data) + max(data)) / 2
+mid_range
+
+BAR PLOT AND HORIZONTAL BAR :
+a<-c(55,67,89,80,90)
+barplot(a)
+a<-c(55,67,89,80,90)
+barplot(a)
+barplot(a,horiz=TRUE)
+
+BOX PLOT :
+names<-c("siri","chru","loki")
+age<-c(23,24,25)
+marks<-c(88,78,25)
+df<-data.frame(names,age,marks)
+hist(df$age)
+boxplot(df$age)
+
+HISTOGRAPH :
+a<-c(55,67,89,80,90)
+hist(a)
+
+SCATTER PLOT :
+set.seed(9)
+x <- rnorm(1000)
+y <- rnorm(1000)
+smoothScatter(y - x)
+smoothScatter(x,y)
