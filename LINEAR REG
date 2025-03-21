@@ -1,0 +1,46 @@
+MEAN
+calculate_mean <- function(numbers) {
+  mean_value <- mean(numbers)
+  return(mean_value)
+}
+
+# Sample data
+numbers <- c(10, 20, 30, 40, 50)
+
+# Calculate mean
+mean_result <- calculate_mean(numbers)
+
+# Print result
+cat("The mean of the given numbers is:", mean_result, "\n")
+          (OR)
+diabetest1<-read_excel("C:/Users/M.Geetha/Downloads/NARA.xlsx")
+A<-c(diabetest1$Age)
+Mean<-mean(A)
+
+
+MULTILPLE REGRESSION
+# Load dataset
+data(mtcars)
+
+# Fit multiple linear regression model
+model <- lm(mpg ~ wt + hp + disp, data = mtcars)
+
+# Display model summary
+summary(model)
+
+
+CORRELATION ANALYSIS
+diabetest1<-read_excel("C:/Users/M.Geetha/Downloads/NARA.xlsx")
+diabetest1<-table(diabetest1 $Age,diabetest1 $Insulin)
+diabetest1
+chisq.test(diabetest1)
+
+
+LINEAR REGRESSION
+Relation <- lm(diabetes$BloodPressure~diabetes$Age)
+Png<- (file=”linear regression.png”)
+Plot(diabetes$Age, diabetes$BloodPressure, col=”green”, main= “ Linear Regression Analysis” , abline= (lm(diabetes$BloodPressure~ diabetes$Age)), xlab = “BloodPressure”, ylanb= “Age”)
+
+
+
+
